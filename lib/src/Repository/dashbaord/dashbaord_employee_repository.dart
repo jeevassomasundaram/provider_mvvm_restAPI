@@ -12,7 +12,7 @@ class EmployeeDataRepository {
     await _apiServices.httpGet(
         api: API.getemployee,
         success: (data) {
-          print("data comming $data");
+        // print("data comming $data");
           for (var i = 0; i < data["data"].length; i++) {
             dataList.add(Employee.fromJson(data["data"][i]));
           }
